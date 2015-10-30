@@ -1,3 +1,4 @@
+#!/bin/bash
 echo Do you want to push the following branches?
 
 git branch --column | grep -v 'master'
