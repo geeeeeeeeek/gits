@@ -1,0 +1,18 @@
+#!/bin/bash
+if [ $1 = "branches" ];then
+  while [ "$1" != "" ]; do
+      case $1 in
+          -d | --delete )         delete_branches.sh
+                                  ;;
+          -c | --create )         create_branches.sh
+                                  ;;
+          -h | --help )           echo Help not supported yet.
+                                  ;;
+      esac
+      shift
+  done
+
+  exit
+fi
+
+echo "Command not found."
