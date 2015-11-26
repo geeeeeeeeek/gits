@@ -6,6 +6,8 @@ if [ $1 = "branches" ];then
                                   ;;
           -c | --create )         create_branches.sh
                                   ;;
+          -p | --push )           push_branches.sh
+                                  ;;
           -h | --help )           echo Help not supported yet.
                                   ;;
       esac
