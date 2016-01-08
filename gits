@@ -8,6 +8,8 @@ if [ $1 = "branches" ];then
                                   ;;
           -p | --push )           push_branches.sh
                                   ;;
+          -z | --zip )            download_branches.sh
+                                  ;;
           -h | --help )           echo Help not supported yet.
                                   ;;
       esac
